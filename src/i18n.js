@@ -31,6 +31,7 @@ const dict = {
       title: 'اضغط على مكان الألم',
       sub: 'اختر المنطقة التي تؤلمك لتعرف كيف نتعامل معها — وننقل اختيارك لنموذج الحجز مباشرة.',
       pick: 'اختر منطقة من الجسم',
+      views: { front: 'من الأمام', back: 'من الخلف' },
       book: 'احجز تقييماً لهذه المنطقة',
       parts: {
         neck: { t: 'الرقبة والكتفين', d: 'آلام الرقبة، تيبّس الكتف، الانزلاق الغضروفي العنقي وآلام الجلوس الطويل أمام الشاشات.' },
@@ -104,6 +105,7 @@ const dict = {
       title: 'Tap where it hurts',
       sub: 'Pick the area that hurts to see how we treat it — your choice carries straight into the booking form.',
       pick: 'Pick an area of the body',
+      views: { front: 'Front', back: 'Back' },
       book: 'Book an assessment for this area',
       parts: {
         neck: { t: 'Neck', d: 'Neck pain, stiffness, cervical disc problems and pain from long hours at a screen.' },

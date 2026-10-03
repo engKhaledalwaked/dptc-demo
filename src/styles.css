@@ -97,11 +97,20 @@ html[lang='en'] .hero h1 { font-weight: 700; letter-spacing: -.02em; }
 .areas { background: var(--paper); }
 .map-wrap { display: grid; grid-template-columns: 340px 1fr; gap: 40px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: clamp(20px, 3vw, 36px); box-shadow: 0 30px 60px -40px rgba(16, 36, 73, .4); }
 .body { background: radial-gradient(circle at 50% 40%, var(--ice), #fff 70%); border-radius: 18px; padding: 16px; }
-.body svg { width: 100%; max-height: 480px; }
-.figure circle, .figure path { fill: var(--ice-2); stroke: #b9cff0; stroke-width: 2; }
+.body svg { display: block; width: 100%; max-height: 480px; }
+.views { display: flex; justify-content: center; gap: 6px; margin-bottom: 10px; }
+.views button { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 4px 14px; font-size: .82rem; color: var(--muted); transition: .2s; }
+.views button.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+.silhouette { fill: #f3f8ff; stroke: #a9c3ea; stroke-width: 1.4; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.region path { fill: var(--ice-2); stroke: #fff; stroke-width: .8; vector-effect: non-scaling-stroke; transition: fill .25s; }
+.region.hit { cursor: pointer; }
+.region.hit path { fill: #bdd6f8; }
+.region.hit:hover path { fill: #95bdf3; }
+.region.on path { fill: #ff6b6f; }
+.region.on { filter: drop-shadow(0 0 5px rgba(255, 90, 95, .55)); }
 .spot { cursor: pointer; outline: none; }
 .spot .halo { fill: rgba(30, 124, 242, .14); transition: .3s; transform-origin: center; transform-box: fill-box; }
-.spot .core { fill: var(--blue); stroke: #fff; stroke-width: 3; }
+.spot .core { fill: var(--blue); stroke: #fff; stroke-width: 7; }
 .spot:hover .halo, .spot:focus .halo { fill: rgba(30, 124, 242, .3); }
 .spot.on .halo { fill: rgba(30, 124, 242, .32); animation: ping 1.6s infinite; }
 .spot.on .core { fill: #ff5a5f; }
